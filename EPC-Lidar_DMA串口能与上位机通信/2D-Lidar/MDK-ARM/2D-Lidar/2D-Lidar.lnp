@@ -1,0 +1,31 @@
+--cpu Cortex-M4.fp
+"2d-lidar\startup_stm32f302xc.o"
+"2d-lidar\system_stm32f3xx.o"
+"2d-lidar\stm32f3xx_hal_pwr_ex.o"
+"2d-lidar\stm32f3xx_hal_i2c.o"
+"2d-lidar\stm32f3xx_hal_i2c_ex.o"
+"2d-lidar\stm32f3xx_hal_uart_ex.o"
+"2d-lidar\stm32f3xx_hal_cortex.o"
+"2d-lidar\stm32f3xx_hal_uart.o"
+"2d-lidar\stm32f3xx_hal_flash.o"
+"2d-lidar\stm32f3xx_hal_dma.o"
+"2d-lidar\stm32f3xx_hal_rcc_ex.o"
+"2d-lidar\stm32f3xx_hal.o"
+"2d-lidar\stm32f3xx_hal_pwr.o"
+"2d-lidar\stm32f3xx_hal_rcc.o"
+"2d-lidar\stm32f3xx_hal_flash_ex.o"
+"2d-lidar\stm32f3xx_hal_gpio.o"
+"2d-lidar\usart.o"
+"2d-lidar\dma.o"
+"2d-lidar\main.o"
+"2d-lidar\gpio.o"
+"2d-lidar\stm32f3xx_it.o"
+"2d-lidar\stm32f3xx_hal_msp.o"
+"2d-lidar\sysconfig.o"
+"2d-lidar\transmit.o"
+"2d-lidar\rec.o"
+--library_type=microlib --strict --scatter "2D-Lidar\2D-Lidar.sct"
+
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "2D-Lidar.map" -o 2D-Lidar\2D-Lidar.axf
