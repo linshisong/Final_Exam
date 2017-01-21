@@ -21,9 +21,9 @@
 "2d-lidar\gpio.o"
 "2d-lidar\stm32f3xx_it.o"
 "2d-lidar\stm32f3xx_hal_msp.o"
-"2d-lidar\sysconfig.o"
-"2d-lidar\transmit.o"
 "2d-lidar\rec.o"
+"2d-lidar\transmit.o"
+"2d-lidar\sysconfig.o"
 --library_type=microlib --strict --scatter "2D-Lidar\2D-Lidar.sct"
 
 --diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
